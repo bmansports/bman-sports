@@ -2,31 +2,40 @@
   "week": "Week 2",
   "games": [
     {
-      "away": "texas",
-      "home": "ohio-state",
+      "away": "ucf",
+      "home": "pittsburgh",
+      "date": "2026-09-12",
+      "time": "3:30 PM ET",
+      "tv": "ESPN2",
+      "note": "A showdown between two emergings squads outside the Power 2. The winner will take a huge step to being ranked.",
+      "headliner": false
+    },
+    {
+      "away": "oklahoma",
+      "home": "michigan",
       "date": "2026-09-12",
       "time": "12:00 PM ET",
       "tv": "FOX",
-      "note": "Replace this with why the game matters. Both are 1-0, both are in my top three, and the loser has almost no margin left in a twelve-team field.",
-      "headliner": true
+      "note": "Everyone is doubting Michigan after surviving Western Michigan on a technicality. Can they prove the doubters wrong?",
+      "headliner": false
     },
     {
-      "away": "notre-dame",
+      "away": "arizona-state",
       "home": "texas-am",
       "date": "2026-09-12",
-      "time": "3:30 PM ET",
+      "time": "12:00 PM ET",
       "tv": "ABC",
-      "note": "A road test that tells us whether the Irish schedule holds up under the committee's eye.",
+      "note": "How will these two perrenial top 20 teams show up against their first true competition of the season?",
       "headliner": false
     },
     {
-      "away": "penn-state",
-      "home": "oregon",
-      "date": "2026-09-11",
+      "away": "ohio-state",
+      "home": "texas",
+      "date": "2026-09-12",
       "time": "7:30 PM ET",
-      "tv": "NBC",
-      "note": "A Friday night slot with the Big Ten's other real game this week.",
-      "headliner": false
+      "tv": "ABC",
+      "note": "Potentially the game of the year in Week 2. Two top 3 programs will faceoff under the lights in Austin. What more can a CFB fan ask for?",
+      "headliner": true
     }
   ]
 }
