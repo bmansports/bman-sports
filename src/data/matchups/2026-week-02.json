@@ -2,15 +2,6 @@
   "week": "Week 2",
   "games": [
     {
-      "away": "ucf",
-      "home": "pittsburgh",
-      "date": "2026-09-12",
-      "time": "3:30 PM ET",
-      "tv": "ESPN2",
-      "note": "A showdown between two emergings squads outside the Power 2. The winner will take a huge step to being ranked.",
-      "headliner": false
-    },
-    {
       "away": "oklahoma",
       "home": "michigan",
       "date": "2026-09-12",
@@ -26,6 +17,15 @@
       "time": "12:00 PM ET",
       "tv": "ABC",
       "note": "How will these two perrenial top 20 teams show up against their first true competition of the season?",
+      "headliner": false
+    },
+    {
+      "away": "ucf",
+      "home": "pittsburgh",
+      "date": "2026-09-12",
+      "time": "3:30 PM ET",
+      "tv": "ESPN2",
+      "note": "A showdown between two emergings squads outside the Power 2. The winner will take a huge step to being ranked.",
       "headliner": false
     },
     {
