@@ -40,17 +40,12 @@ const rows = polls
     <p class="lede">College football rankings, updated weekly.</p>
 
     <ul class="polls">
-      {polls.map((p) => (
+      {rows.map((r) => (
         <li>
-          <a href={`/cfb/${p.id}/`}>
-            <span class="wk">{p.data.week}</span>
-            <span class="dt">{p.data.date}</span>
-            <span class="no1">
-              No. 1 &nbsp;
-              {typeof p.data.rankings[0].team === "string"
-                ? p.data.rankings[0].team
-                : p.data.rankings[0].team.id}
-            </span>
+          <a href={`/cfb/${r.id}/`}>
+            <span class="wk">{r.week}</span>
+            <span class="dt">{r.date}</span>
+            <span class="no1">No. 1 {r.leader}</span>
           </a>
         </li>
       ))}
