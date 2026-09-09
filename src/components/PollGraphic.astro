@@ -1,0 +1,202 @@
+---
+import { movement, readableOn, dash, type Poll, type Row } from "../lib/poll";
+
+interface Props {
+  board: Row[];
+  poll: Poll;
+  credit?: string;
+}
+
+const { board, poll, credit = "" } = Astro.props;
+
+const top5 = board.filter((t) => t.rank <= 5);
+const rest = board.filter((t) => t.rank > 5);
+const split = Math.ceil(rest.length / 2);
+const colA = rest.slice(0, split);
+const colB = rest.slice(split);
+
+const droppedOut = (poll.droppedOut || []).join(", ");
+const orv = (poll.orv || []).join(", ");
+---
+
+<div class="stage" id="poster">
+  <div class="masthead">
+    <h1 class="title">{poll.title}</h1>
+    <div class="meta">
+      <p>{poll.week}</p>
+      <p>{poll.date}</p>
+    </div>
+  </div>
+
+  <div class="podium">
+    {top5.map((t) => {
+      const mv = movement(t.prev, t.rank);
+      return (
+        <div class="card">
+          <div class="card-rank" style={`background:${t.c1};color:${readableOn(t.c1)}`}>
+            {t.rank}
+          </div>
+          <div class="card-body">
+            <span class="card-logo">
+              <img src={`/logos/${t.id}.png`} alt=""
+                   style={t.scale ? `transform:scale(${t.scale})` : undefined} />
+            </span>
+            <p class="card-team">{t.short || t.name}</p>
+            <p class="card-meta">
+              <span>{dash(t.rec)}</span>
+              <span class={`move ${mv.cls}`}>{mv.text}</span>
+            </p>
+          </div>
+        </div>
+      );
+    })}
+  </div>
+
+  <div class="board-wrap">
+    {[colA, colB].map((col) => (
+      <ol class="board">
+        {col.map((t) => {
+          const mv = movement(t.prev, t.rank);
+          return (
+            <li class="row">
+              <span class="bar" style={`background:${t.c1}`}></span>
+              <span class="rank">{t.rank}</span>
+              <span class="logo">
+                <img src={`/logos/${t.id}.png`} alt=""
+                     style={t.scale ? `transform:scale(${t.scale})` : undefined} />
+              </span>
+              <span class="team">{t.short || t.name}</span>
+              <span class="rec">{dash(t.rec)}</span>
+              <span class={`move ${mv.cls}`}>{mv.text}</span>
+            </li>
+          );
+        })}
+      </ol>
+    ))}
+  </div>
+
+  <div class="footer">
+    <div>
+      {droppedOut && <p>Dropped out: {droppedOut}</p>}
+      {credit && <p class="credit">{credit}</p>}
+    </div>
+    <div>
+      {orv && <p>Others receiving votes: {orv}</p>}
+    </div>
+  </div>
+</div>
+
+<style>
+  /* Custom properties live on .stage rather than :root so Astro's
+     scoping keeps them from leaking into the rest of the site. */
+  .stage{
+    --field:#1E2732;
+    --surface:#27323F;
+    --rule:#3A4757;
+    --ink:#F0F3F6;
+    --muted:#93A2B0;
+    --flat:#5D6D7C;
+    --up:#5FB474;
+    --down:#DD6E63;
+    --new:#D2AC33;
+    --row:48px;
+
+    width:1000px;
+    background:var(--field);
+    padding:36px 40px 30px;
+    color:var(--ink);
+    font-family:'Barlow',system-ui,sans-serif;
+  }
+  .stage *{box-sizing:border-box;margin:0;padding:0}
+
+  .masthead{
+    display:flex;align-items:flex-end;justify-content:space-between;
+    padding-bottom:22px;
+  }
+  .title{
+    font-family:'Barlow Condensed',sans-serif;
+    font-weight:700;font-size:54px;line-height:.9;
+    letter-spacing:-.01em;
+  }
+  .meta{text-align:right;font-size:13px;color:var(--muted);line-height:1.5}
+
+  .podium{display:flex;gap:14px;margin-bottom:26px}
+  .card{flex:1 1 0;min-width:0;background:var(--surface)}
+  .card-rank{
+    height:34px;display:flex;align-items:center;padding:0 12px;
+    font-family:'Barlow Condensed',sans-serif;
+    font-weight:700;font-size:24px;line-height:1;
+    font-variant-numeric:tabular-nums;
+  }
+  .card-body{padding:16px 12px 14px;text-align:center}
+  .card-logo{
+    height:84px;margin-bottom:14px;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .card-logo img{max-height:84px;max-width:120px;object-fit:contain}
+  .card-team{
+    font-family:'Barlow Condensed',sans-serif;
+    font-weight:600;font-size:20px;line-height:1.05;
+    text-transform:uppercase;
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  }
+  .card-meta{
+    margin-top:6px;font-size:12px;color:var(--muted);
+    display:flex;justify-content:center;gap:10px;
+    font-variant-numeric:tabular-nums;
+  }
+  .card-meta .move{flex:0 0 auto;text-align:left;font-size:12px;margin-left:0}
+
+  .board-wrap{display:flex;justify-content:space-between}
+  .board{width:calc(50% - 18px);list-style:none;border-top:1px solid var(--rule)}
+
+  .row{
+    display:flex;align-items:center;
+    height:var(--row);
+    border-bottom:1px solid var(--rule);
+  }
+  .bar{flex:0 0 3px;height:28px;margin-right:16px}
+  .rank{
+    flex:0 0 24px;text-align:right;
+    font-family:'Barlow Condensed',sans-serif;
+    font-weight:600;font-size:20px;line-height:1;
+    color:var(--muted);
+    font-variant-numeric:tabular-nums;
+  }
+  .logo{
+    flex:0 0 40px;height:34px;
+    margin:0 16px 0 12px;
+    display:flex;align-items:center;justify-content:center;
+  }
+  .logo img{max-width:40px;max-height:34px;object-fit:contain}
+  .team{
+    flex:1 1 auto;min-width:0;
+    font-family:'Barlow Condensed',sans-serif;
+    font-weight:600;font-size:25px;line-height:1;
+    text-transform:uppercase;letter-spacing:.005em;
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  }
+  .rec{
+    flex:0 0 52px;text-align:right;
+    font-size:14px;font-weight:500;color:var(--muted);
+    font-variant-numeric:tabular-nums;
+  }
+  .move{
+    flex:0 0 44px;text-align:right;margin-left:12px;
+    font-size:13px;font-weight:600;
+    font-variant-numeric:tabular-nums;
+  }
+  .move.up{color:var(--up)}
+  .move.down{color:var(--down)}
+  .move.flat{color:var(--flat)}
+  .move.new{color:var(--new)}
+
+  .footer{
+    margin-top:20px;padding-top:14px;border-top:1px solid var(--rule);
+    display:flex;justify-content:space-between;
+    font-size:12px;color:var(--muted);line-height:1.55;
+  }
+  .footer div{width:calc(50% - 18px)}
+  .footer p{margin:0}
+  .footer .credit{margin-top:10px;color:var(--flat)}
+</style>

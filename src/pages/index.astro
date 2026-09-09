@@ -1,17 +1,88 @@
 ---
+import { getCollection } from "astro:content";
 
+const [polls, teamEntries] = await Promise.all([
+  getCollection("cfbPoll"),
+  getCollection("teams"),
+]);
+
+const teams = new Map(teamEntries.map((t) => [t.id, t.data]));
+
+const rows = polls
+  .sort((a, b) => b.id.localeCompare(a.id))
+  .map((p) => {
+    const ref = p.data.rankings[0].team;
+    const id = typeof ref === "string" ? ref : ref.id;
+    return {
+      id: p.id,
+      week: p.data.week,
+      date: p.data.date,
+      leader: teams.get(id)?.name ?? id,
+    };
+  });
 ---
 
 <html lang="en">
-	<head>
-		<meta charset="utf-8" />
-		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
-		<link rel="icon" href="/favicon.ico" />
-		<meta name="viewport" content="width=device-width" />
-		<meta name="generator" content={Astro.generator} />
-		<title>Astro</title>
-	</head>
-	<body>
-		<h1>Astro</h1>
-	</body>
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width" />
+  <title>Bman's Sports</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500&display=swap"
+    rel="stylesheet"
+  />
+</head>
+<body>
+  <main>
+    <h1>Bman's Sports</h1>
+    <p class="lede">College football rankings, updated weekly.</p>
+
+    <ul class="polls">
+      {polls.map((p) => (
+        <li>
+          <a href={`/cfb/${p.id}/`}>
+            <span class="wk">{p.data.week}</span>
+            <span class="dt">{p.data.date}</span>
+            <span class="no1">
+              No. 1 &nbsp;
+              {typeof p.data.rankings[0].team === "string"
+                ? p.data.rankings[0].team
+                : p.data.rankings[0].team.id}
+            </span>
+          </a>
+        </li>
+      ))}
+    </ul>
+  </main>
+
+  <style>
+    body{
+      background:#0B0F13;color:#F0F3F6;
+      font-family:'Barlow',system-ui,sans-serif;
+      margin:0;padding:64px 24px;
+    }
+    main{max-width:680px;margin:0 auto}
+    h1{
+      font-family:'Barlow Condensed',sans-serif;
+      font-weight:700;font-size:52px;line-height:.95;margin:0;
+    }
+    .lede{color:#93A2B0;margin:10px 0 40px;font-size:16px}
+    .polls{list-style:none;margin:0;padding:0;border-top:1px solid #3A4757}
+    .polls li{border-bottom:1px solid #3A4757}
+    .polls a{
+      display:flex;align-items:baseline;gap:16px;
+      padding:18px 4px;text-decoration:none;color:inherit;
+    }
+    .polls a:hover{background:#1E2732}
+    .wk{
+      font-family:'Barlow Condensed',sans-serif;
+      font-weight:600;font-size:24px;text-transform:uppercase;
+      flex:0 0 110px;
+    }
+    .dt{color:#93A2B0;font-size:14px;flex:1 1 auto}
+    .no1{color:#5D6D7C;font-size:13px;text-transform:uppercase;letter-spacing:.04em}
+  </style>
+</body>
 </html>

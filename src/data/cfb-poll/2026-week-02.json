@@ -1,0 +1,39 @@
+{
+  "title": "Bman's Top 25",
+  "week": "Week 2",
+  "date": "September 8, 2026",
+  "previous": "2026-week-01.json",
+  "rankings": [
+    { "team": "texas",          "rec": "1-0" },
+    { "team": "notre-dame",     "rec": "1-0" },
+    { "team": "ohio-state",     "rec": "1-0" },
+    { "team": "lsu",            "rec": "1-0" },
+    { "team": "alabama",        "rec": "1-0" },
+    { "team": "texas-am",       "rec": "1-0" },
+    { "team": "oregon",         "rec": "1-0" },
+    { "team": "georgia",        "rec": "1-0" },
+    { "team": "miami",          "rec": "1-0" },
+    { "team": "indiana",        "rec": "1-0" },
+    { "team": "penn-state",     "rec": "1-0" },
+    { "team": "usc",            "rec": "2-0" },
+    { "team": "florida",        "rec": "1-0" },
+    { "team": "texas-tech",     "rec": "1-0" },
+    { "team": "ole-miss",       "rec": "1-0" },
+    { "team": "oklahoma",       "rec": "1-0" },
+    { "team": "byu",            "rec": "1-0" },
+    { "team": "south-carolina", "rec": "1-0" },
+    { "team": "virginia-tech",  "rec": "1-0" },
+    { "team": "michigan",       "rec": "1-0" },
+    { "team": "tennessee",      "rec": "1-0" },
+    { "team": "clemson",        "rec": "0-1" },
+    { "team": "smu",            "rec": "1-0" },
+    { "team": "iowa",           "rec": "1-0" },
+    { "team": "nebraska",       "rec": "1-0" }
+  ],
+  "droppedOut": ["Missouri", "Auburn"],
+  "orv": [
+    "Auburn", "Virginia", "Louisville", "Utah", "Missouri", "Washington",
+    "Florida State", "Houston", "Pittsburgh", "Kansas State", "Arizona State",
+    "Cincinnati", "Mississippi State", "Boise State", "Duke", "UCF"
+  ]
+}
