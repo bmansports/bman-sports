@@ -1,0 +1,71 @@
+---
+import { getCollection } from "astro:content";
+import Base from "../../layouts/Base.astro";
+
+const [polls, teamEntries] = await Promise.all([
+  getCollection("cfbPoll"),
+  getCollection("teams"),
+]);
+
+const teams = new Map(teamEntries.map((t) => [t.id, t.data]));
+
+const rows = polls
+  .sort((a, b) => b.id.localeCompare(a.id))
+  .map((p) => {
+    const ref = p.data.rankings[0].team;
+    const id = typeof ref === "string" ? ref : ref.id;
+    return {
+      id: p.id,
+      week: p.data.week,
+      date: p.data.date,
+      leaderId: id,
+      leader: teams.get(id)?.name ?? id,
+    };
+  });
+---
+
+<Base title="Rankings — Bman's Sports" description="Every weekly college football Top 25 poll.">
+  <h1 class="page-title">Rankings</h1>
+  <p class="lede">
+    Every poll of the season. Movement on each page is computed against the
+    previous week rather than entered by hand.
+  </p>
+
+  <ul class="polls">
+    {rows.map((r) => (
+      <li>
+        <a href={`/cfb/${r.id}/`}>
+          <span class="wk">{r.week}</span>
+          <span class="dt">{r.date}</span>
+          <span class="leader">
+            <img src={`/logos/${r.leaderId}.png`} alt="" />
+            <span>No. 1 {r.leader}</span>
+          </span>
+        </a>
+      </li>
+    ))}
+  </ul>
+</Base>
+
+<style>
+  .polls{list-style:none;margin:36px 0 0;padding:0;border-top:1px solid var(--rule)}
+  .polls li{border-bottom:1px solid var(--rule)}
+  .polls a{
+    display:flex;align-items:center;gap:18px;
+    padding:18px 6px;text-decoration:none;
+  }
+  .polls a:hover{background:var(--field)}
+  .wk{
+    font-family:'Barlow Condensed',sans-serif;
+    font-weight:600;font-size:24px;text-transform:uppercase;
+    flex:0 0 110px;
+  }
+  .dt{color:var(--muted);font-size:14px;flex:1 1 auto}
+  .leader{display:flex;align-items:center;gap:10px;color:var(--muted);font-size:14px}
+  .leader img{height:24px;max-width:32px;object-fit:contain}
+
+  @media (max-width:600px){
+    .polls a{flex-wrap:wrap;gap:10px}
+    .dt{flex:1 1 100%;order:3}
+  }
+</style>

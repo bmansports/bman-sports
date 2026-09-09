@@ -1,0 +1,51 @@
+---
+import { getCollection } from "astro:content";
+import Base from "../../layouts/Base.astro";
+
+const posts = (await getCollection("blog", (p) => !p.data.draft)).sort(
+  (a, b) => b.data.date.valueOf() - a.data.date.valueOf()
+);
+
+const fmt = (d: Date) =>
+  d.toLocaleDateString("en-US", { month: "long", day: "numeric", year: "numeric" });
+---
+
+<Base title="Blog — Bman's Sports" description="Arguments about the rankings, and notes on how the site works.">
+  <h1 class="page-title">Blog</h1>
+  <p class="lede">
+    Longer arguments about the rankings, and notes on how this thing is built.
+  </p>
+
+  <ul class="posts">
+    {posts.map((p) => (
+      <li>
+        <a href={`/blog/${p.id}/`}>
+          <h2>{p.data.title}</h2>
+          <p class="dt">{fmt(p.data.date)}</p>
+          <p class="sum">{p.data.summary}</p>
+          {p.data.tags.length > 0 && (
+            <p class="tags">{p.data.tags.map((t) => <span>{t}</span>)}</p>
+          )}
+        </a>
+      </li>
+    ))}
+  </ul>
+
+  {posts.length === 0 && <p class="empty">Nothing posted yet.</p>}
+</Base>
+
+<style>
+  .posts{list-style:none;margin:36px 0 0;padding:0;border-top:1px solid var(--rule)}
+  .posts li{border-bottom:1px solid var(--rule)}
+  .posts a{display:block;padding:24px 6px;text-decoration:none}
+  .posts a:hover{background:var(--field)}
+  .posts h2{font-weight:600;font-size:28px;line-height:1.1}
+  .dt{margin:6px 0 0;font-size:13px;color:var(--flat)}
+  .sum{margin:10px 0 0;font-size:15px;line-height:1.55;color:var(--muted);max-width:64ch}
+  .tags{margin:12px 0 0;display:flex;gap:8px;flex-wrap:wrap}
+  .tags span{
+    font-size:11px;letter-spacing:.06em;text-transform:uppercase;
+    color:var(--flat);border:1px solid var(--rule);padding:3px 8px;
+  }
+  .empty{color:var(--muted);margin-top:36px}
+</style>

@@ -1,0 +1,56 @@
+---
+import { getCollection } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import { rangeLabel } from "../../lib/format";
+
+const weeks = (await getCollection("matchups"))
+  .sort((a, b) => b.id.localeCompare(a.id))
+  .map((w) => ({
+    id: w.id,
+    week: w.data.week,
+    range: rangeLabel(w.data.games.map((g) => g.date)),
+    count: w.data.games.length,
+  }));
+---
+
+<Base title="Marquee matchups — Bman's Sports" description="The games each week that actually decide something.">
+  <h1 class="page-title">Marquee matchups</h1>
+  <p class="lede">
+    Not every game on the slate, just the ones that change the shape of the
+    season.
+  </p>
+
+  <ul class="weeks">
+    {weeks.map((w) => (
+      <li>
+        <a href={`/matchups/${w.id}/`}>
+          <span class="wk">{w.week}</span>
+          <span class="dt">{w.range}</span>
+          <span class="count">
+            {w.count} {w.count === 1 ? "game" : "games"}
+          </span>
+        </a>
+      </li>
+    ))}
+  </ul>
+
+  {weeks.length === 0 && <p class="empty">Nothing posted yet.</p>}
+</Base>
+
+<style>
+  .weeks{list-style:none;margin:36px 0 0;padding:0;border-top:1px solid var(--rule)}
+  .weeks li{border-bottom:1px solid var(--rule)}
+  .weeks a{
+    display:flex;align-items:baseline;gap:18px;
+    padding:18px 6px;text-decoration:none;
+  }
+  .weeks a:hover{background:var(--field)}
+  .wk{
+    font-family:'Barlow Condensed',sans-serif;
+    font-weight:600;font-size:24px;text-transform:uppercase;
+    flex:0 0 110px;
+  }
+  .dt{color:var(--muted);font-size:14px;flex:1 1 auto}
+  .count{color:var(--flat);font-size:13px}
+  .empty{color:var(--muted);margin-top:36px}
+</style>

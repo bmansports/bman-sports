@@ -1,0 +1,193 @@
+---
+import { getCollection } from "astro:content";
+import Base from "../../layouts/Base.astro";
+import { dayLabel, dayKey, rangeLabel } from "../../lib/format";
+
+export async function getStaticPaths() {
+  const weeks = await getCollection("matchups");
+  return weeks.map((entry) => ({
+    params: { week: entry.id },
+    props: { entry },
+  }));
+}
+
+const { entry } = Astro.props;
+
+const [teamEntries, polls] = await Promise.all([
+  getCollection("teams"),
+  getCollection("cfbPoll"),
+]);
+
+const teams = new Map(teamEntries.map((t) => [t.id, t.data]));
+
+const refId = (r: any) => (typeof r === "string" ? r : r.id);
+
+// Ranks come from the poll, never from the matchup file — otherwise revising
+// a poll would leave stale numbers on these cards. Defaults to the poll whose
+// id matches this file's; unranked teams simply get no number.
+const pollId = entry.data.poll?.replace(/\.json$/, "") ?? entry.id;
+const poll = polls.find((p) => p.id === pollId);
+
+const rankOf = new Map<string, number>();
+poll?.data.rankings.forEach((r, i) => rankOf.set(refId(r.team), i + 1));
+
+const side = (ref: any) => {
+  const id = refId(ref);
+  return { id, ...teams.get(id)!, rank: rankOf.get(id) ?? null };
+};
+
+const games = entry.data.games
+  .map((g) => ({ ...g, away: side(g.away), home: side(g.home) }))
+  // Chronological, then the headliner leads its own day.
+  .sort((a, b) => {
+    const d = a.date.valueOf() - b.date.valueOf();
+    return d !== 0 ? d : Number(b.headliner) - Number(a.headliner);
+  });
+
+const byDay = new Map<string, typeof games>();
+for (const g of games) {
+  const key = dayKey(g.date);
+  if (!byDay.has(key)) byDay.set(key, []);
+  byDay.get(key)!.push(g);
+}
+
+const days = [...byDay.values()].map((list) => ({
+  label: dayLabel(list[0].date),
+  games: list,
+}));
+
+const range = rangeLabel(games.map((g) => g.date));
+---
+
+<Base
+  title={`Marquee matchups — ${entry.data.week}`}
+  description={`The games worth watching in ${entry.data.week}.`}
+>
+  <p class="crumb"><a href="/matchups/">← All weeks</a></p>
+  <h1 class="page-title">{entry.data.week}</h1>
+  <p class="lede">
+    {range}
+    {poll && <> — ranks from my <a href={`/cfb/${poll.id}/`}>{poll.data.week} poll</a></>}
+  </p>
+
+  {days.map((day) => (
+    <section class="day">
+      <h2 class="day-label">{day.label}</h2>
+      <div class="games">
+        {day.games.map((g) => (
+          <article class={g.headliner ? "game top" : "game"}>
+            {g.headliner && <span class="flag">Game of the week</span>}
+
+            <div class="teams">
+              <div class="side">
+                <img src={`/logos/${g.away.id}.png`} alt="" />
+                <span class="nm">
+                  {g.away.rank && <span class="rk">#{g.away.rank}&nbsp;</span>}
+                  {g.away.short || g.away.name}
+                </span>
+              </div>
+              <span class="at">at</span>
+              <div class="side">
+                <img src={`/logos/${g.home.id}.png`} alt="" />
+                <span class="nm">
+                  {g.home.rank && <span class="rk">#{g.home.rank}&nbsp;</span>}
+                  {g.home.short || g.home.name}
+                </span>
+              </div>
+            </div>
+
+            <div class="bar">
+              <span style={`background:${g.away.c1}`}></span>
+              <span style={`background:${g.home.c1}`}></span>
+            </div>
+
+            {(g.time || g.tv) && (
+              <p class="when">
+                {g.time}{g.time && g.tv ? "  \u2014  " : ""}{g.tv}
+              </p>
+            )}
+
+            <p class="note">{g.note}</p>
+          </article>
+        ))}
+      </div>
+    </section>
+  ))}
+</Base>
+
+<style>
+  .crumb{margin:0 0 14px;font-size:13px}
+  .crumb a{color:var(--muted);text-decoration:none}
+  .crumb a:hover{color:var(--ink)}
+  .lede a{color:var(--muted)}
+  .lede a:hover{color:var(--ink)}
+
+  .day{margin-top:40px}
+  .day-label{
+    font-weight:600;font-size:20px;text-transform:uppercase;
+    letter-spacing:.03em;color:var(--muted);
+    padding-bottom:10px;margin-bottom:16px;
+    border-bottom:1px solid var(--rule);
+  }
+
+  .games{display:grid;grid-template-columns:repeat(2,1fr);gap:16px}
+
+  .game{
+    background:var(--field);border:1px solid var(--rule);
+    padding:22px;
+  }
+  .game.top{border-color:var(--new)}
+
+  /* A card spanning the whole row gets capped and centred, so content fills
+     its card instead of hugging one edge of an over-wide box. Three cases:
+     the headliner, a day with a single game, and the odd card left beside a
+     headliner. */
+  .game.top,
+  .games:has(> :only-child) .game,
+  .game.top + .game:last-child{
+    grid-column:1 / -1;
+    width:100%;
+    max-width:860px;
+    justify-self:center;
+  }
+
+  .flag{
+    display:block;margin-bottom:14px;
+    font-size:11px;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--new);
+  }
+
+  .teams{display:flex;align-items:center;gap:20px}
+  .side{display:flex;align-items:center;gap:12px;flex:1 1 0;min-width:0}
+  .side:last-of-type{justify-content:flex-end;text-align:right}
+  .side img{height:44px;max-width:56px;object-fit:contain;flex:0 0 auto}
+  .nm{
+    font-family:'Barlow Condensed',sans-serif;
+    font-weight:600;font-size:26px;line-height:1;text-transform:uppercase;
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis;
+  }
+  .rk{
+    font-size:15px;color:var(--muted);
+    font-variant-numeric:tabular-nums;
+  }
+  .at{font-size:12px;color:var(--flat);text-transform:uppercase;letter-spacing:.06em}
+
+  .bar{display:flex;height:3px;margin:18px 0 14px}
+  .bar span{flex:1 1 0}
+
+  .when{
+    margin:0 0 10px;
+    font-size:13px;color:var(--muted);
+    font-variant-numeric:tabular-nums;
+  }
+  .note{
+    margin:0;
+    font-size:15px;line-height:1.55;color:var(--ink);
+  }
+
+  @media (max-width:760px){
+    .games{grid-template-columns:1fr}
+    .nm{font-size:21px}
+    .rk{font-size:13px}
+  }
+</style>

@@ -1,5 +1,6 @@
 ---
 import { getCollection } from "astro:content";
+import Base from "../layouts/Base.astro";
 
 const [polls, teamEntries] = await Promise.all([
   getCollection("cfbPoll"),
@@ -7,77 +8,122 @@ const [polls, teamEntries] = await Promise.all([
 ]);
 
 const teams = new Map(teamEntries.map((t) => [t.id, t.data]));
+const latest = polls.sort((a, b) => b.id.localeCompare(a.id))[0];
 
-const rows = polls
-  .sort((a, b) => b.id.localeCompare(a.id))
-  .map((p) => {
-    const ref = p.data.rankings[0].team;
-    const id = typeof ref === "string" ? ref : ref.id;
-    return {
-      id: p.id,
-      week: p.data.week,
-      date: p.data.date,
-      leader: teams.get(id)?.name ?? id,
-    };
-  });
+const topFive = latest
+  ? latest.data.rankings.slice(0, 5).map((r, i) => {
+      const id = typeof r.team === "string" ? r.team : r.team.id;
+      return { id, rank: i + 1, name: teams.get(id)?.name ?? id };
+    })
+  : [];
+
+const sections = [
+  {
+    href: "/rankings/",
+    label: "Rankings",
+    blurb: "My Top 25, updated every week, with movement tracked against the previous poll.",
+  },
+  {
+    href: "/matchups/",
+    label: "Marquee matchups",
+    blurb: "The handful of games each week that actually decide something.",
+  },
+  {
+    href: "/blog/",
+    label: "Blog",
+    blurb: "Longer arguments about the rankings, and notes on how this site is built.",
+  },
+];
 ---
 
-<html lang="en">
-<head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width" />
-  <title>Bman's Sports</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Barlow+Condensed:wght@600;700&family=Barlow:wght@400;500&display=swap"
-    rel="stylesheet"
-  />
-</head>
-<body>
-  <main>
-    <h1>Bman's Sports</h1>
-    <p class="lede">College football rankings, updated weekly.</p>
+<Base title="Bman's Sports" description="Weekly college football rankings, marquee matchups, and analysis.">
+  <h1 class="page-title">Bman's Sports</h1>
+  <p class="lede">
+    A weekly college football Top 25, the games worth watching, and the
+    occasional argument about both.
+  </p>
 
-    <ul class="polls">
-      {rows.map((r) => (
-        <li>
-          <a href={`/cfb/${r.id}/`}>
-            <span class="wk">{r.week}</span>
-            <span class="dt">{r.date}</span>
-            <span class="no1">No. 1 {r.leader}</span>
-          </a>
-        </li>
-      ))}
-    </ul>
-  </main>
+  {latest && (
+    <a class="latest" href={`/cfb/${latest.id}/`}>
+      <div class="latest-head">
+        <span class="tag">Latest poll</span>
+        <span class="wk">{latest.data.week}</span>
+        <span class="dt">{latest.data.date}</span>
+      </div>
+      <ol class="five">
+        {topFive.map((t) => (
+          <li>
+            <span class="n">{t.rank}</span>
+            <img src={`/logos/${t.id}.png`} alt="" />
+            <span class="nm">{t.name}</span>
+          </li>
+        ))}
+      </ol>
+    </a>
+  )}
 
-  <style>
-    body{
-      background:#0B0F13;color:#F0F3F6;
-      font-family:'Barlow',system-ui,sans-serif;
-      margin:0;padding:64px 24px;
-    }
-    main{max-width:680px;margin:0 auto}
-    h1{
-      font-family:'Barlow Condensed',sans-serif;
-      font-weight:700;font-size:52px;line-height:.95;margin:0;
-    }
-    .lede{color:#93A2B0;margin:10px 0 40px;font-size:16px}
-    .polls{list-style:none;margin:0;padding:0;border-top:1px solid #3A4757}
-    .polls li{border-bottom:1px solid #3A4757}
-    .polls a{
-      display:flex;align-items:baseline;gap:16px;
-      padding:18px 4px;text-decoration:none;color:inherit;
-    }
-    .polls a:hover{background:#1E2732}
-    .wk{
-      font-family:'Barlow Condensed',sans-serif;
-      font-weight:600;font-size:24px;text-transform:uppercase;
-      flex:0 0 110px;
-    }
-    .dt{color:#93A2B0;font-size:14px;flex:1 1 auto}
-    .no1{color:#5D6D7C;font-size:13px;text-transform:uppercase;letter-spacing:.04em}
-  </style>
-</body>
-</html>
+  <div class="sections">
+    {sections.map((s) => (
+      <a class="section" href={s.href}>
+        <h2>{s.label}</h2>
+        <p>{s.blurb}</p>
+      </a>
+    ))}
+  </div>
+</Base>
+
+<style>
+  .latest{
+    display:block;text-decoration:none;
+    margin:40px 0 44px;padding:22px 24px 24px;
+    background:var(--field);border:1px solid var(--rule);
+  }
+  .latest:hover{border-color:var(--muted)}
+  .latest-head{
+    display:flex;align-items:baseline;gap:14px;flex-wrap:wrap;
+    padding-bottom:18px;border-bottom:1px solid var(--rule);
+  }
+  .tag{
+    font-size:11px;letter-spacing:.08em;text-transform:uppercase;
+    color:var(--new);
+  }
+  .wk{
+    font-family:'Barlow Condensed',sans-serif;
+    font-weight:600;font-size:22px;text-transform:uppercase;
+  }
+  .dt{font-size:13px;color:var(--muted);margin-left:auto}
+
+  .five{list-style:none;margin:0;padding:18px 0 0;display:flex;gap:8px}
+  .five li{
+    flex:1 1 0;min-width:0;
+    display:flex;flex-direction:column;align-items:center;gap:8px;
+    text-align:center;
+  }
+  .five .n{
+    font-family:'Barlow Condensed',sans-serif;
+    font-weight:600;font-size:16px;color:var(--muted);
+    font-variant-numeric:tabular-nums;
+  }
+  .five img{height:38px;max-width:52px;object-fit:contain}
+  .five .nm{
+    font-family:'Barlow Condensed',sans-serif;
+    font-weight:600;font-size:15px;text-transform:uppercase;
+    white-space:nowrap;overflow:hidden;text-overflow:ellipsis;max-width:100%;
+  }
+
+  .sections{display:grid;grid-template-columns:repeat(3,1fr);gap:16px}
+  .section{
+    display:block;text-decoration:none;
+    padding:22px;background:var(--field);
+    border:1px solid var(--rule);
+  }
+  .section:hover{border-color:var(--muted)}
+  .section h2{font-weight:600;font-size:24px;text-transform:uppercase}
+  .section p{margin:8px 0 0;font-size:14px;color:var(--muted);line-height:1.5}
+
+  @media (max-width:760px){
+    .sections{grid-template-columns:1fr}
+    .five{flex-wrap:wrap}
+    .five li{flex:0 0 calc(33.333% - 6px)}
+  }
+</style>
