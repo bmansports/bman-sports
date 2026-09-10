@@ -3,7 +3,7 @@ title: "Bman Sports' 2026 NFL Predictions"
 date: 2026-09-09
 summary: "Every division, every major award, and the two teams I have meeting in February. Plus a handful of calls I'll probably regret."
 tags: ["nfl", "predictions"]
-draft: true
+draft: false
 ---
 
 I think I can speak for a lot of NFL fans here and say that this year will be very "extreme". The gap between the top of the league and the bottom has never felt this large to me before. You've got teams like the LA Rams casually adding two of the 3 best defensive players over the past decade and a half and slapping them on a final 4 team from last year while there are teams like the Jets, Falcons, Browns, and Cardinals with their fanbases basically throwing in the towel already. The one thing I'm confident in is that there will be a multitude of surprises to come.
@@ -11,7 +11,7 @@ I think I can speak for a lot of NFL fans here and say that this year will be ve
 ## AFC
 
 ### East
-**Buffalo Bills —** This one is really tough. New England brought in some great pieces this offseason headlined by AJ Brown. But I think the schedule shift is gonna hurt them just enough to let Buffalo take the reigns on the division this year.
+**Buffalo Bills —** This one is really tough. New England brought in some great pieces this offseason headlined by AJ Brown. But I think the schedule shift is gonna hurt them just enough to let Buffalo take the reins on the division this year.
 
 ### North
 **Baltimore Ravens —** Its more that I do not feel all that confident in the rest of the division.
@@ -34,7 +34,7 @@ I think I can speak for a lot of NFL fans here and say that this year will be ve
 **New Orleans Saints —** I have a lot of faith in Tyler Shough and Kellen Moore, whereas my faith in Carolina's defense, Atlanta's QB's, and Todd Bowles are lacking.
 
 ### West
-**Los Angeles Rams —** I do not feel like I have to explain this one. They have Puka, Stafford, Myles Garrett, and Aaron Donald.
+**Los Angeles Rams —** I do not feel like I have to explain this one as they have Puka, Stafford, Myles Garrett, and Aaron Donald. But if you need another reason, Sean McVay is the best coach in the NFC by a solid margin and he will guide this star loaded team to great heights.
 
 ## Awards
 
@@ -50,7 +50,7 @@ I think I can speak for a lot of NFL fans here and say that this year will be ve
 
 **Comeback Player of the Year —** Aaron Donald.
 
-**Coach of the Year —** Kellen Moore.
+**Coach of the Year —** Kellen Moore. Despite not having any other award winners on his squad. The Saints as a squad will impress many and lead Moore to getting the nod here.
 
 ## The playoff picture
 
@@ -78,20 +78,16 @@ NFC:
 
 ## Super Bowl LXI
 
-**Pick —** Los Angeles beats Denver. As much as history wantes me to bet against the superteam, this one is so well constructed that I just cannot choose anyone else.
+**Pick —** Los Angeles beats Denver. As much as history wants me to bet against the superteam, this one is so well constructed that I just cannot choose anyone else.
 
 ## Bold predictions
 
-Five or six, one line each. The bar for "bold" is that you'd feel a little
-stupid saying it out loud — if every one of these looks reasonable, they
-aren't bold enough.
 
-1. New Orleans finishes the season as the top seed in the NFC.
-2. Luther Burden finishes as an OPOY Finalist.
-3. Cleveland finishes with a better record than Cincinnati.
-4. Ja'Kobi Lane finishes as the runner up for OROY
-5. Their will be a public outcry to give Olaivavega Ioane the OROY. It will almost work.
-6. Baker Mayfield will not be the starter in Tampa Bay come the end of 2027.
+1. Luther Burden finishes as an OPOY Finalist.
+2. Cleveland finishes with a better record than Cincinnati.
+3. Ja'Kobi Lane finishes as the runner up for OROY.
+4. There will be a public outcry to give Olaivavega Ioane the OROY. It will almost work.
+5. Baker Mayfield will not be the starter in Tampa Bay come the start of the 2027-2028 season.
 
 ---
 
