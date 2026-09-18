@@ -1,0 +1,68 @@
+{
+  "week": "Week 3",
+  "games": [
+    {
+      "away": "houston",
+      "home": "texas-tech",
+      "date": "2026-09-18",
+      "time": "8:00 PM ET",
+      "tv": "FOX",
+      "note": "Friday nights in the Big 12 get even brighter this week as Texas Tech finds themselves on upset alert against Weigman's Cougars.",
+      "headliner": false
+    },
+    {
+      "away": "florida-state",
+      "home": "alabama",
+      "date": "2026-09-19",
+      "time": "3:30 PM ET",
+      "tv": "ABC",
+      "note": "Two teams on the wrong end of a dynasty look for a boost as they prepare for the bulk of their conference schedules.",
+      "headliner": false
+    },
+    {
+      "away": "smu",
+      "home": "louisville",
+      "date": "2026-09-19",
+      "time": "3:30 PM ET",
+      "tv": "ESPN2",
+      "note": "Two ACC Championship contenders with top end QBs duel to stay in the hunt.",
+      "headliner": false
+    },
+    {
+      "away": "mississippi-state",
+      "home": "south-carolina",
+      "date": "2026-09-19",
+      "time": "4:15 PM ET",
+      "tv": "SECN",
+      "note": "Two dark horses in the SEC open up their SEC schedules against each othetr. Who's real and who's a pretender?",
+      "headliner": false
+    },
+    {
+      "away": "florida",
+      "home": "auburn",
+      "date": "2026-09-19",
+      "time": "7:00 PM ET",
+      "tv": "ESPN",
+      "note": "One could argue that this is the matchup of the week if it weren't for a duel one state to the west. Can Auburn slow down Baugh enough to upset the Gators?",
+      "headliner": false
+    },
+    {
+      "away": "lsu",
+      "home": "ole-miss",
+      "date": "2026-09-19",
+      "time": "7:30 PM ET",
+      "tv": "ABC",
+      "note": "Despite Ole Miss's struggles to open the season, all will be redeemed if they can knock off ex-coach Lane Kiffin and the LSU Tigers. The Rebels fanbase will be ROCKING under the lights in one of the most insane environments we will likely ever see.",
+      "headliner": true
+    },
+    {
+      "away": "new-mexico",
+      "home": "oklahoma",
+      "date": "2026-09-19",
+      "time": "7:30 PM ET",
+      "tv": "ESPN2",
+      "note": "This screams of a trap game for the Sooners as the 2nd best Group of 5 team comes to town while OU may be looking ahead to a trip to UGA next week. Can Mateer help the Sooners bounce back?",
+      "headliner": false
+    }
+  ]
+}
