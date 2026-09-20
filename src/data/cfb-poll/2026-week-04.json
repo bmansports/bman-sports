@@ -1,0 +1,39 @@
+{
+  "title": "Bman's Top 25",
+  "week": "Week 4",
+  "date": "September 20, 2026",
+  "previous": "2026-week-03.json",
+  "rankings": [
+    { "team": "notre-dame",        "rec": "3-0" },
+    { "team": "ohio-state",        "rec": "2-1" },
+    { "team": "texas",             "rec": "3-0" },
+    { "team": "texas-am",          "rec": "2-1" },
+    { "team": "alabama",           "rec": "3-0" },
+    { "team": "georgia",           "rec": "3-0" },
+    { "team": "miami",             "rec": "3-0" },
+    { "team": "oregon",            "rec": "2-1" },
+    { "team": "florida",           "rec": "3-0" },
+    { "team": "tennessee",         "rec": "3-0" },
+    { "team": "utah",              "rec": "3-0" },
+    { "team": "indiana",           "rec": "3-0" },
+    { "team": "penn-state",        "rec": "3-0" },
+    { "team": "virginia-tech",     "rec": "3-0" },
+    { "team": "ole-miss",          "rec": "3-0" },
+    { "team": "lsu",               "rec": "2-1" },
+    { "team": "michigan",          "rec": "3-0" },
+    { "team": "mississippi-state", "rec": "3-0" },
+    { "team": "auburn",            "rec": "2-1" },
+    { "team": "texas-tech",        "rec": "3-0" },
+    { "team": "duke",              "rec": "3-0" },
+    { "team": "louisville",        "rec": "2-1" },
+    { "team": "usc",               "rec": "4-0" },
+    { "team": "byu",               "rec": "3-0" },
+    { "team": "missouri",          "rec": "3-0" }
+  ],
+  "droppedOut": ["Houston", "Boise State"],
+  "orv": [
+    "Houston", "Boise State", "Oklahoma", "South Carolina", "Pittsburgh",
+    "Kansas State", "Florida State", "Iowa", "UCLA", "Clemson", "UCF",
+    "New Mexico", "Baylor", "Oklahoma State"
+  ]
+}
