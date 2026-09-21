@@ -3,7 +3,7 @@ title: "Week 4 Top 25: "
 date: 2026-09-22
 summary: ""
 tags: ["cfb", "rankings"]
-draft: true
+draft: false
 ---
 
 Yeah, Texas is below Ohio State. Yes two undefeated teams plummeted down the rankings. That and many more in this post.
