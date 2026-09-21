@@ -1,0 +1,77 @@
+{
+  "week": "Week 3",
+  "games": [
+    {
+      "away": "texas",
+      "home": "tennessee",
+      "date": "2026-09-26",
+      "time": "12:00 PM ET",
+      "tv": "ABC",
+      "note": "A duel between burnt orange and white squads in a big time September SEC battle.",
+      "headliner": true
+    },
+    {
+      "away": "ole-miss",
+      "home": "florida",
+      "date": "2026-09-26",
+      "time": "3:30 PM ET",
+      "tv": "ABC",
+      "note": "Two SEC teams on the rise into the top 15 face off coming off big wins. Who can keep up with the big guys?",
+      "headliner": false
+    },
+    {
+      "away": "oklahoma",
+      "home": "georgia",
+      "date": "2026-09-26",
+      "time": "3:30 PM ET",
+      "tv": "ESPN",
+      "note": "OU survived a scare from New Mexico. What will they do against an untested UGA?",
+      "headliner": false
+    },
+    {
+      "away": "iowa",
+      "home": "michigan",
+      "date": "2026-09-26",
+      "time": "3:30 PM ET",
+      "tv": "CBS",
+      "note": "Two of the Big Ten's best offensive options in Kamari Moulton and JJ Buchanan duel in the Big House.",
+      "headliner": false
+    },
+    {
+      "away": "south-carolina",
+      "home": "alabama",
+      "date": "2026-09-26",
+      "time": "7:00 PM ET",
+      "tv": "ESPN",
+      "note": "Alabama has been a bit shaky this season so far. Can Sellers and Fuller knock them off.",
+      "headliner": false
+    },
+    {
+      "away": "texas-am",
+      "home": "lsu",
+      "date": "2026-09-26",
+      "time": "7:30 PM ET",
+      "tv": "ABC",
+      "note": "One of the best rivalries in the modern SEC takes a more desparate turn this year. The Aggies and Tigers are both coming off upset losses. A two game losing streak before the calendar turns to October may spell doom for these playoff hopefuls.",
+      "headliner": false
+    },
+    {
+      "away": "oregon",
+      "home": "usc",
+      "date": "2026-09-26",
+      "time": "7:30 PM ET",
+      "tv": "NBC",
+      "note": "A rebranded Pac-12 duel in the Big Ten sees two programs with a lot of pressure on them due to falling short.",
+      "headliner": false
+    },
+    {
+      "away": "missouri",
+      "home": "mississippi-state",
+      "date": "2026-09-26",
+      "time": "7:45 PM ET",
+      "tv": "SECN",
+      "note": "Two underrated SEC squads face off in Starkville. Can Mizzou shut down Heisman sleeper Kamario Taylor?",
+      "headliner": false
+    }
+  ]
+}
