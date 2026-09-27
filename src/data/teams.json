@@ -14,6 +14,7 @@
   "houston":          { "name": "Houston",        "c1": "#C8102E", "c2": "#FFFFFF" },
   "indiana":          { "name": "Indiana",        "c1": "#7D110C", "c2": "#EEEDEB" },
   "iowa":             { "name": "Iowa",           "c1": "#FFCD00", "c2": "#000000" },
+  "james-madison":    { "name": "James Madison",  "short": "JMU", "c1": "#450084", "c2": "#CBB677" },
   "kansas-state":     { "name": "Kansas State",   "c1": "#512888", "c2": "#D1D1D1" },
   "louisville":       { "name": "Louisville",     "c1": "#AD0000", "c2": "#000000" },
   "lsu":              { "name": "LSU",            "c1": "#461D7C", "c2": "#FDD023" },
@@ -43,5 +44,6 @@
   "utah":             { "name": "Utah",           "c1": "#CC0000", "c2": "#FFFFFF" },
   "virginia":         { "name": "Virginia",       "c1": "#232D4B", "c2": "#F84C1E" },
   "virginia-tech":    { "name": "Virginia Tech",  "c1": "#630031", "c2": "#CF4420" },
+  "wake-forest":      { "name": "Wake Forest",    "c1": "#9E7E38", "c2": "#000000" },
   "washington":       { "name": "Washington",     "c1": "#4B2E83", "c2": "#B7A57A" }
 }

@@ -1,0 +1,39 @@
+{
+  "title": "Bman's Top 25",
+  "week": "Week 5",
+  "date": "September 27, 2026",
+  "previous": "2026-week-04.json",
+  "rankings": [
+    { "team": "notre-dame",        "rec": "4-0" },
+    { "team": "ohio-state",        "rec": "3-1" },
+    { "team": "alabama",           "rec": "4-0" },
+    { "team": "georgia",           "rec": "4-0" },
+    { "team": "texas",             "rec": "4-0" },
+    { "team": "miami",             "rec": "4-0" },
+    { "team": "oregon",            "rec": "3-1" },
+    { "team": "florida",           "rec": "4-0" },
+    { "team": "lsu",               "rec": "3-1" },
+    { "team": "texas-am",          "rec": "2-2" },
+    { "team": "texas-tech",        "rec": "4-0" },
+    { "team": "tennessee",         "rec": "3-1" },
+    { "team": "utah",              "rec": "4-0" },
+    { "team": "mississippi-state", "rec": "4-0" },
+    { "team": "auburn",            "rec": "3-1" },
+    { "team": "duke",              "rec": "4-0" },
+    { "team": "boise-state",       "rec": "3-1" },
+    { "team": "iowa",              "rec": "4-0" },
+    { "team": "ucla",              "rec": "4-0" },
+    { "team": "oklahoma-state",    "rec": "3-1" },
+    { "team": "indiana",           "rec": "4-0" },
+    { "team": "penn-state",        "rec": "3-1" },
+    { "team": "virginia-tech",     "rec": "4-0" },
+    { "team": "ole-miss",          "rec": "3-1" },
+    { "team": "michigan",          "rec": "3-1" }
+  ],
+  "droppedOut": ["Louisville", "USC", "BYU", "Missouri"],
+  "orv": [
+    "Pittsburgh", "USC", "BYU", "Missouri", "Clemson", "UCF", "Wake Forest",
+    "Louisville", "Houston", "South Carolina", "New Mexico", "Baylor",
+    "Nebraska", "Cincinnati", "Virginia", "James Madison"
+  ]
+}
