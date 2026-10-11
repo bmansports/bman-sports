@@ -1,0 +1,38 @@
+{
+  "title": "Bman's Top 25",
+  "week": "Week 6",
+  "date": "October 6, 2026",
+  "previous": "2026-week-05.json",
+  "rankings": [
+    { "team": "alabama",        "rec": "5-0" },
+    { "team": "georgia",        "rec": "5-0" },
+    { "team": "miami",          "rec": "5-0" },
+    { "team": "ohio-state",     "rec": "4-1" },
+    { "team": "notre-dame",     "rec": "5-0" },
+    { "team": "texas",          "rec": "4-0" },
+    { "team": "oregon",         "rec": "3-1" },
+    { "team": "tennessee",      "rec": "4-1" },
+    { "team": "utah",           "rec": "4-0" },
+    { "team": "duke",           "rec": "4-0" },
+    { "team": "boise-state",    "rec": "4-1" },
+    { "team": "ucla",           "rec": "4-0" },
+    { "team": "texas-tech",     "rec": "5-0" },
+    { "team": "iowa",           "rec": "5-1" },
+    { "team": "indiana",        "rec": "5-0" },
+    { "team": "pittsburgh",     "rec": "5-0" },
+    { "team": "wake-forest",    "rec": "4-1" },
+    { "team": "nebraska",       "rec": "5-0" },
+    { "team": "lsu",            "rec": "4-1" },
+    { "team": "missouri",       "rec": "4-1" },
+    { "team": "florida",        "rec": "4-1" },
+    { "team": "houston",        "rec": "4-1" },
+    { "team": "new-mexico",     "rec": "4-1" },
+    { "team": "baylor",         "rec": "4-1" },
+    { "team": "oklahoma-state", "rec": "3-1" }
+  ],
+  "droppedOut": [
+    "Texas A&M", "Mississippi State", "Auburn", "Penn State",
+    "Virginia Tech", "Ole Miss", "Michigan"
+  ],
+  "orv": ["Texas A&M"]
+}

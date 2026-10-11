@@ -1,0 +1,41 @@
+{
+  "week": "Week 6",
+  "games": [
+    {
+      "away": "indiana",
+      "home": "nebraska",
+      "date": "2026-10-10",
+      "time": "12:00 PM ET",
+      "tv": "FOX",
+      "note": "Two undefeated Big Ten teams in Lincoln at noon. One of them leaves with its first loss.",
+      "headliner": false
+    },
+    {
+      "away": "texas-am",
+      "home": "missouri",
+      "date": "2026-10-10",
+      "time": "12:00 PM ET",
+      "tv": "ABC",
+      "note": "Texas A&M just fell out of my top 25. Winning at Missouri is the fastest way back in, and losing would sink them for good.",
+      "headliner": false
+    },
+    {
+      "away": "ucla",
+      "home": "oregon",
+      "date": "2026-10-10",
+      "time": "3:30 PM ET",
+      "tv": "CBS",
+      "note": "Undefeated UCLA heads to Autzen to find out whether they're a real contender or just had a soft first month.",
+      "headliner": false
+    },
+    {
+      "away": "georgia",
+      "home": "alabama",
+      "date": "2026-10-10",
+      "time": "7:30 PM ET",
+      "tv": "ABC",
+      "note": "My top two, both 5-0, in Tuscaloosa under the lights. Whoever wins holds No. 1 going into the back half of the season.",
+      "headliner": true
+    }
+  ]
+}

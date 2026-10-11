@@ -1,0 +1,67 @@
+{
+  "week": "Week 5",
+  "games": [
+    {
+      "away": "pittsburgh",
+      "home": "virginia-tech",
+      "date": "2026-10-02",
+      "time": "7:00 PM ET",
+      "tv": "ESPN",
+      "note": "Two undefeated ACC teams on a Friday night in one of my favorite CFB environments in Blacksburg."
+    },
+    {
+      "away": "alabama",
+      "home": "mississippi-state",
+      "date": "2026-10-03",
+      "time": "12:00 PM ET",
+      "tv": "ABC",
+      "note": "Mississippi State is 4-0 and already beat Missouri. Hosting Alabama at noon tells us whether that start is real.",
+      "headliner": false
+    },
+    {
+      "away": "ucf",
+      "home": "houston",
+      "date": "2026-10-03",
+      "time": "12:00 PM ET",
+      "tv": "ESPN2",
+      "note": "Two Big 12 teams sitting just outside my poll. The winner is knocking on the door next week.",
+      "headliner": false
+    },
+    {
+      "away": "ohio-state",
+      "home": "iowa",
+      "date": "2026-10-03",
+      "time": "3:30 PM ET",
+      "tv": "CBS",
+      "note": "Iowa is 4-0 and jumped fifteen spots in my poll this week. The No. 2 team coming to Kinnick is the fastest way to find out if they earned it.",
+      "headliner": true
+    },
+    {
+      "away": "auburn",
+      "home": "tennessee",
+      "date": "2026-10-03",
+      "time": "3:30 PM ET",
+      "tv": "ESPN",
+      "note": "Both 3-1, both in the middle of my top 25. The loser slides into the pack that's one bad week from falling out.",
+      "headliner": false
+    },
+    {
+      "away": "florida",
+      "home": "missouri",
+      "date": "2026-10-03",
+      "time": "3:30 PM ET",
+      "tv": "ABC",
+      "note": "Missouri just fell out of my top 25 after losing in Starkville. Beating an undefeated Florida puts them right back in.",
+      "headliner": false
+    },
+    {
+      "away": "miami",
+      "home": "clemson",
+      "date": "2026-10-03",
+      "time": "7:30 PM ET",
+      "tv": "ABC",
+      "note": "Miami is 4-0 and Clemson is out of my top 25 at 3-1. Death Valley at night is still Death Valley.",
+      "headliner": false
+    }
+  ]
+}
