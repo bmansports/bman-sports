@@ -25,6 +25,7 @@
   "missouri":         { "name": "Missouri",       "c1": "#F1B82D", "c2": "#000000" },
   "nebraska":         { "name": "Nebraska",       "c1": "#E41C38", "c2": "#F5F1E7" },
   "new-mexico":       { "name": "New Mexico",     "c1": "#BA0C2F", "c2": "#A7A8AA" },
+  "north-carolina":   { "name": "North Carolina", "short": "UNC", "c1": "#7BAFD4", "c2": "#13294B" },
   "notre-dame":       { "name": "Notre Dame",     "c1": "#0C2340", "c2": "#C99700" },
   "ohio-state":       { "name": "Ohio State",     "c1": "#BB0000", "c2": "#8A8B8C" },
   "oklahoma":         { "name": "Oklahoma",       "c1": "#841617", "c2": "#FDF9F6" },
@@ -47,5 +48,6 @@
   "virginia":         { "name": "Virginia",       "c1": "#232D4B", "c2": "#F84C1E" },
   "virginia-tech":    { "name": "Virginia Tech",  "c1": "#630031", "c2": "#CF4420" },
   "wake-forest":      { "name": "Wake Forest",    "c1": "#9E7E38", "c2": "#000000" },
-  "washington":       { "name": "Washington",     "c1": "#4B2E83", "c2": "#B7A57A" }
+  "washington":       { "name": "Washington",     "c1": "#4B2E83", "c2": "#B7A57A" },
+  "wisconsin":        { "name": "Wisconsin",      "c1": "#C5050C", "c2": "#FFFFFF" }
 }

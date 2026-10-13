@@ -1,0 +1,113 @@
+{
+  "week": "Week 7",
+  "games": [
+    {
+      "away": "ohio-state",
+      "home": "indiana",
+      "date": "2026-10-17",
+      "time": "12:00 PM ET",
+      "tv": "FOX",
+      "note": "Two of the top dogs in the Big Ten duel in Indiana this week. Both teams have some questions that only a win in a game like this can answer.",
+      "headliner": true
+    },
+    {
+      "away": "florida",
+      "home": "texas",
+      "date": "2026-10-17",
+      "time": "12:00 PM ET",
+      "tv": "ABC",
+      "note": "Both of these SEC squads got punched in the mouth last week. This is no longer a duel between national championship dreamers, this is a game for survival.",
+      "headliner": false
+    },
+    {
+      "away": "mississippi-state",
+      "home": "lsu",
+      "date": "2026-10-17",
+      "time": "12:00 PM ET",
+      "tv": "ESPN",
+      "note": "They're 26th and 27th in my poll. The winner has a good shot at the top 25 and a path back into CFP conversations. The loser will likely see any outside CFP shot snuffed out.",
+      "headliner": false
+    },
+    {
+      "away": "alabama",
+      "home": "tennessee",
+      "date": "2026-10-17",
+      "time": "3:30 PM ET",
+      "tv": "ABC",
+      "note": "A classic rivalry in the best venue in CFB. Bama's loss to Georgia is only as bad as they make it mentally, but there's no harder place to bounce back from a tough loss than Neyland.",
+      "headliner": false
+    },
+    {
+      "away": "auburn",
+      "home": "georgia",
+      "date": "2026-10-17",
+      "time": "3:30 PM ET",
+      "tv": "ESPN",
+      "note": "The Bulldogs are on top of the world once again, but they can't get too high on themselves. A desperate Auburn squad is looking to cause even more chaos.",
+      "headliner": false
+    },
+    {
+      "away": "missouri",
+      "home": "ole-miss",
+      "date": "2026-10-17",
+      "time": "3:30 PM ET",
+      "tv": "SECN",
+      "note": "Missouri is one of the 3 Musketeers of crazy risers (with UCLA and Wake). Transitive property says they should whoop Ole Miss, but let's be honest. Has transitive property ever worked in College Football?",
+      "headliner": false
+    },
+    {
+      "away": "north-carolina",
+      "home": "duke",
+      "date": "2026-10-17",
+      "time": "3:30 PM ET",
+      "tv": "ESPN2",
+      "note": "A traditional CBB blue blood clash gets a little mid-October Saturday seasoning as Duke tries to redeem themselves after a bad loss to the Yellow Jackets. On the other side, Bill and the Tar Heels hope to keep their upswing from Pittsburgh going. Winner likely gets into strong ACC contention.",
+      "headliner": false
+    },
+    {
+      "away": "oklahoma-state",
+      "home": "houston",
+      "date": "2026-10-17",
+      "time": "7:30 PM ET",
+      "tv": "FOX",
+      "note": "The Big 12's biggest risers duel in a city in need of some sports revitalization. Who's gonna make the step towards Texas Tech and Utah?",
+      "headliner": false
+    },
+    {
+      "away": "notre-dame",
+      "home": "byu",
+      "date": "2026-10-17",
+      "time": "7:30 PM ET",
+      "tv": "ABC",
+      "note": "I do not think I have dogged on an undefeated team this late into the season like I have the Cougars. Can they prove me wrong and knock off the ever-so-confident Fighting Irish?",
+      "headliner": false
+    },
+    {
+      "away": "wisconsin",
+      "home": "ucla",
+      "date": "2026-10-17",
+      "time": "7:30 PM ET",
+      "tv": "NBC",
+      "note": "If you told me I would care about a UCLA vs Wisconsin game at the start of the season, I would have told you that you were insane. Now UCLA is a top 5 team and Wisconsin is a rather strong 4-1 team. Can UCLA hold the top of the Big Ten hill another week?",
+      "headliner": false
+    },
+    {
+      "away": "kentucky",
+      "home": "oklahoma",
+      "date": "2026-10-17",
+      "time": "7:30 PM ET",
+      "tv": "SECN",
+      "note": "Both of these teams shocked the world last week. Which of these teams is empty hype and which is a true CFP contender?",
+      "headliner": false
+    },
+    {
+      "away": "nebraska",
+      "home": "oregon",
+      "date": "2026-10-17",
+      "time": "11:00 PM ET",
+      "tv": "FOX",
+      "note": "Two top teams reeling from tough losses with a side of a potential revenge game against Raiola makes for the best after dark kickoff we have had in years.",
+      "headliner": false
+    }
+  ]
+}
