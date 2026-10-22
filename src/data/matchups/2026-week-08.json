@@ -1,0 +1,59 @@
+{
+  "week": "Week 8",
+  "games": [
+    {
+      "away": "lsu",
+      "home": "auburn",
+      "date": "2026-10-24",
+      "time": "12:00 PM ET",
+      "tv": "ABC",
+      "note": "Two teams that have truly been caught in the SEC mix so far this season.",
+      "headliner": false
+    },
+    {
+      "away": "texas-am",
+      "home": "alabama",
+      "date": "2026-10-24",
+      "time": "3:30 PM ET",
+      "tv": "ABC",
+      "note": "The Tide are reeling after getting smacked in the mouth two weeks in a row. A&M is in an even worse spot. Both need wins this week like they need oxygen.",
+      "headliner": false
+    },
+    {
+      "away": "tennessee",
+      "home": "south-carolina",
+      "date": "2026-10-24",
+      "time": "3:30 PM ET",
+      "tv": "ESPN",
+      "note": "I gave the Vols a huge boost this week in the rankings after an impressive win against their arch rivals in Alabama. Can Tennessee avoid getting caught up in the high like many other SEC squads have after big wins this season. If not, the Sellers and Harbor show will torch this star-studded Volunteer defense.",
+      "headliner": false
+    },
+    {
+      "away": "ole-miss",
+      "home": "texas",
+      "date": "2026-10-24",
+      "time": "7:30 PM ET",
+      "tv": "ABC",
+      "note": "The Rebels are quietly sneaking back up the SEC ladder after getting knocked down by the Gators. Texas is hoping to be able to say the exact same thing after this week.",
+      "headliner": true
+    },
+    {
+      "away": "usc",
+      "home": "wisconsin",
+      "date": "2026-10-24",
+      "time": "7:30 PM ET",
+      "tv": "NBC",
+      "note": "The pits of CFB despair call for more victims. A big loss for either team will spell doom for the rest of the season.",
+      "headliner": false
+    },
+    {
+      "away": "houston",
+      "home": "utah",
+      "date": "2026-10-24",
+      "time": "10:15 PM ET",
+      "tv": "ESPN",
+      "note": "In the most consistent conference so far this season, its two darlings of the season face off after dark. Can Utah prove they are more than their weak schedule so far? Can Houston truly enter the BYU and Texas Tech conversations? Both will be answered under the lights in Salt Lake City.",
+      "headliner": false
+    }
+  ]
+}
