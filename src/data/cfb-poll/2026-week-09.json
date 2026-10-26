@@ -1,0 +1,39 @@
+{
+  "title": "Bman's Top 25",
+  "week": "Week 9",
+  "date": "October 25, 2026",
+  "previous": "2026-week-08.json",
+  "rankings": [
+    { "team": "georgia",        "rec": "6-1" },
+    { "team": "miami",          "rec": "7-0" },
+    { "team": "wake-forest",    "rec": "6-1" },
+    { "team": "ucla",           "rec": "7-0" },
+    { "team": "notre-dame",     "rec": "6-1" },
+    { "team": "alabama",        "rec": "6-2" },
+    { "team": "ohio-state",     "rec": "6-1" },
+    { "team": "oklahoma-state", "rec": "5-2" },
+    { "team": "lsu",            "rec": "6-2" },
+    { "team": "kentucky",       "rec": "7-1" },
+    { "team": "indiana",        "rec": "7-1" },
+    { "team": "south-carolina", "rec": "4-3" },
+    { "team": "florida",        "rec": "5-2" },
+    { "team": "texas",          "rec": "5-2" },
+    { "team": "ole-miss",       "rec": "5-2" },
+    { "team": "utah",           "rec": "7-0" },
+    { "team": "wisconsin",      "rec": "5-2" },
+    { "team": "missouri",       "rec": "5-2" },
+    { "team": "tennessee",      "rec": "6-2" },
+    { "team": "boise-state",    "rec": "6-1" },
+    { "team": "arizona",        "rec": "6-1" },
+    { "team": "smu",            "rec": "6-1" },
+    { "team": "oregon-state",   "rec": "5-2" },
+    { "team": "nebraska",       "rec": "5-2" },
+    { "team": "auburn",         "rec": "4-3" }
+  ],
+  "droppedOut": ["BYU", "Texas Tech", "Houston", "Oregon", "Iowa", "Oklahoma"],
+  "orv": [
+    "Texas Tech", "Houston", "Oregon", "Oklahoma", "Louisville", "UCF", "BYU",
+    "Texas A&M", "Northwestern", "Minnesota", "Iowa", "Florida State",
+    "New Mexico", "West Virginia", "Duke"
+  ]
+}

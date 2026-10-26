@@ -1,5 +1,6 @@
 {
   "alabama":          { "name": "Alabama",        "c1": "#9E1B32", "c2": "#828A8F" },
+  "arizona":          { "name": "Arizona",        "c1": "#CC0033", "c2": "#003366" },
   "arizona-state":    { "name": "Arizona State",  "c1": "#8C1D40", "c2": "#FFC627" },
   "auburn":           { "name": "Auburn",         "c1": "#0C2340", "c2": "#E87722" },
   "baylor":           { "name": "Baylor",         "c1": "#154734", "c2": "#FFB81C" },
