@@ -1,0 +1,68 @@
+{
+  "week": "Week 9",
+  "games": [
+    {
+      "away": "arizona",
+      "home": "texas-tech",
+      "date": "2026-10-31",
+      "time": "12:00 PM ET",
+      "tv": "ESPN",
+      "note": "Both 6-1. Arizona just cracked my top 25 and Texas Tech just fell out of it. One of them swaps places again by Sunday.",
+      "headliner": false
+    },
+    {
+      "away": "wisconsin",
+      "home": "iowa",
+      "date": "2026-10-31",
+      "time": "12:00 PM ET",
+      "tv": "FOX",
+      "note": "Wisconsin earned its spot by beating USC. A road trip to Kinnick is a much harder way to keep it.",
+      "headliner": false
+    },
+    {
+      "away": "auburn",
+      "home": "ole-miss",
+      "date": "2026-10-31",
+      "time": "12:45 PM ET",
+      "tv": "SECN",
+      "note": "Auburn is hanging onto the last spot in my poll at 4-3. Ole Miss is trying to stop a slide after losing in Austin.",
+      "headliner": false
+    },
+    {
+      "away": "minnesota",
+      "home": "indiana",
+      "date": "2026-10-31",
+      "time": "3:30 PM ET",
+      "tv": "CBS",
+      "note": "Minnesota is coming off a win over Iowa and sits just outside my poll. Indiana at home is the chance to make that win look like more than a one-off.",
+      "headliner": false
+    },
+    {
+      "away": "northwestern",
+      "home": "oregon",
+      "date": "2026-10-31",
+      "time": "3:30 PM ET",
+      "tv": "Peacock",
+      "note": "A 6-1 Northwestern team nobody saw coming visits a 4-3 Oregon team nobody expected to be here. Both are on the outside looking in.",
+      "headliner": false
+    },
+    {
+      "away": "florida",
+      "home": "georgia",
+      "date": "2026-10-31",
+      "time": "3:30 PM ET",
+      "tv": "ABC",
+      "note": "The rivalry moves to Atlanta this year, a neutral site. My No. 1 against a Florida team that already has two losses and nothing to lose.",
+      "headliner": true
+    },
+    {
+      "away": "south-carolina",
+      "home": "oklahoma",
+      "date": "2026-10-31",
+      "time": "4:15 PM ET",
+      "tv": "SECN",
+      "note": "South Carolina jumped to No. 12 by beating Tennessee. Winning in Norman is how they prove that ranking isn't too high.",
+      "headliner": false
+    }
+  ]
+}
