@@ -2,6 +2,7 @@
   "alabama":          { "name": "Alabama",        "c1": "#9E1B32", "c2": "#828A8F" },
   "arizona":          { "name": "Arizona",        "c1": "#CC0033", "c2": "#003366" },
   "arizona-state":    { "name": "Arizona State",  "c1": "#8C1D40", "c2": "#FFC627" },
+  "arkansas":         { "name": "Arkansas",       "c1": "#9D2235", "c2": "#FFFFFF" },
   "auburn":           { "name": "Auburn",         "c1": "#0C2340", "c2": "#E87722" },
   "baylor":           { "name": "Baylor",         "c1": "#154734", "c2": "#FFB81C" },
   "boise-state":      { "name": "Boise State",    "c1": "#0033A0", "c2": "#D64309" },
@@ -13,6 +14,7 @@
   "florida-state":    { "name": "Florida State",  "c1": "#782F40", "c2": "#CEB888" },
   "georgia":          { "name": "Georgia",        "c1": "#BA0C2F", "c2": "#000000" },
   "houston":          { "name": "Houston",        "c1": "#C8102E", "c2": "#FFFFFF" },
+  "illinois":         { "name": "Illinois",       "c1": "#E84A27", "c2": "#13294B" },
   "indiana":          { "name": "Indiana",        "c1": "#7D110C", "c2": "#EEEDEB" },
   "iowa":             { "name": "Iowa",           "c1": "#FFCD00", "c2": "#000000" },
   "james-madison":    { "name": "James Madison",  "short": "JMU", "c1": "#450084", "c2": "#CBB677" },
@@ -40,6 +42,7 @@
   "pittsburgh":       { "name": "Pittsburgh",     "c1": "#003594", "c2": "#FFB81C" },
   "smu":              { "name": "SMU",            "c1": "#0033A0", "c2": "#C8102E" },
   "south-carolina":   { "name": "South Carolina", "short": "S. Carolina", "c1": "#73000A", "c2": "#000000" },
+  "syracuse":         { "name": "Syracuse",      "c1": "#F76900", "c2": "#000E54" },
   "tennessee":        { "name": "Tennessee",      "c1": "#FF8200", "c2": "#58595B" },
   "texas":            { "name": "Texas",          "c1": "#BF5700", "c2": "#333F48" },
   "texas-am":         { "name": "Texas A&M",      "c1": "#500000", "c2": "#FFFFFF" },
@@ -52,5 +55,6 @@
   "virginia-tech":    { "name": "Virginia Tech",  "c1": "#630031", "c2": "#CF4420" },
   "wake-forest":      { "name": "Wake Forest",    "c1": "#9E7E38", "c2": "#000000" },
   "washington":       { "name": "Washington",     "c1": "#4B2E83", "c2": "#B7A57A" },
+  "west-virginia":    { "name": "West Virginia", "short": "WVU", "c1": "#002855", "c2": "#EAAA00" },
   "wisconsin":        { "name": "Wisconsin",      "c1": "#C5050C", "c2": "#FFFFFF" }
 }

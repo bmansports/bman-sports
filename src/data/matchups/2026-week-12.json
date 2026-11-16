@@ -1,0 +1,95 @@
+{
+  "week": "Week 12",
+  "games": [
+    {
+      "away": "ohio-state",
+      "home": "nebraska",
+      "date": "2026-11-21",
+      "time": "12:00 PM ET",
+      "tv": "FOX",
+      "note": "Ohio State is back in my poll at No. 13 after beating an upstart Northwestern. Nebraska is just starting to get their swagger back after a horrid 4 game skid. Can the Buckeyes live to see another week?",
+      "headliner": false
+    },
+    {
+      "away": "iowa",
+      "home": "illinois",
+      "date": "2026-11-21",
+      "time": "2:30 PM ET",
+      "tv": "BTN",
+      "note": "Iowa has won three straight to climb to No. 18. Illinois is 6-4and has nothing to lose and a top-end WR in Collin Dixon. Can Zach Lutmer shut him down in a marquee WR vs CB matchup?",
+      "headliner": false
+    },
+    {
+      "away": "arkansas",
+      "home": "texas",
+      "date": "2026-11-21",
+      "time": "3:30 PM ET",
+      "tv": "ESPN",
+      "note": "Arkansas might just put the often-inconsistent Longhorns on upset alert again. I have been docking Texas in my poll two weeks in a row for shaky wins behind Arch's roller coaster. A convincing win is needed to stave off the doubters, but I do not think the Hogs will let them off easy.",
+      "headliner": false
+    },
+    {
+      "away": "indiana",
+      "home": "washington",
+      "date": "2026-11-21",
+      "time": "3:30 PM ET",
+      "tv": "Peacock",
+      "note": "Indiana has struggled to find room to move back into a playoff spot for me and a strong road win in Seattle over a 6-4 Washington team would give them a path up. But the shaky QB situation in Hoosier land will face their toughest test yet in the all-purpose man (and in my opinion best safety) in Alex Mclaughlin.",
+      "headliner": false
+    },
+    {
+      "away": "lsu",
+      "home": "tennessee",
+      "date": "2026-11-21",
+      "time": "3:30 PM ET",
+      "tv": "ABC",
+      "note": "LSU's tough schedule gets no easier this week as they travel to Neyland. Tennessee at No. 8 makes it three straight top-10 opponents led by stars Bishop and Lane. Dilin Jones will need to step up to quiet the negativity around the program.",
+      "headliner": false
+    },
+    {
+      "away": "texas-am",
+      "home": "oklahoma",
+      "date": "2026-11-21",
+      "time": "3:45 PM ET",
+      "tv": "ESPN2",
+      "note": "Oklahoma got into my poll at No. 25 by beating Ole Miss. A 4-6 Texas A&M team at home with a struggling defense is the kind of game you have to win to stay there.",
+      "headliner": false
+    },
+    {
+      "away": "smu",
+      "home": "notre-dame",
+      "date": "2026-11-21",
+      "time": "7:30 PM ET",
+      "tv": "NBC",
+      "note": "SMU had possibly the harshest boot out of playoff contention of any team this season after getting rolled by the Deacons. Now its up to Jennings and the rest of the Mustang Crew to bounce back and knock off the Irish to drag them down with them.",
+      "headliner": false
+    },
+    {
+      "away": "georgia",
+      "home": "south-carolina",
+      "date": "2026-11-21",
+      "time": "7:30 PM ET",
+      "tv": "ABC",
+      "note": "We've been here before with the Bulldogs. Just came off a huge win and traveling to a scrappy middle of the pack SEC squad with nothing to lose in a stadium with a history of wacky events occuring in it. The Bulldogs cannot afford to slip up again.",
+      "headliner": true
+    },
+    {
+      "away": "kentucky",
+      "home": "missouri",
+      "date": "2026-11-21",
+      "time": "7:30 PM ET",
+      "tv": "SECN",
+      "note": "Likely the closest matchup in terms of quality this week. Which squad will bounce back and which one will continue to fall?",
+      "headliner": false
+    },
+    {
+      "away": "oklahoma-state",
+      "home": "arizona-state",
+      "date": "2026-11-21",
+      "time": "10:15 PM ET",
+      "tv": "ESPN",
+      "note": "BIG 12 AFTER DARK!! Oklahoma State went from No. 10 to out of my poll after getting trounced by Texas Tech. Arizona State is 6-4 and just started to gain momentum after knocking off my Knights. An upset may be inbound in favor of the Tempe faithful.",
+      "headliner": false
+    }
+  ]
+}

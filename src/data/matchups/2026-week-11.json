@@ -1,0 +1,140 @@
+{
+  "week": "Week 11",
+  "games": [
+    {
+      "away": "illinois",
+      "home": "ucla",
+      "date": "2026-11-13",
+      "time": "9:00 PM ET",
+      "tv": "FOX",
+      "note": "UCLA is 9-0 and back up to No. 4. Illinois is 6-3 and coming off a win over Nebraska, so a Friday night upset isn't out of the question.",
+      "headliner": false
+    },
+    {
+      "away": "duke",
+      "home": "miami",
+      "date": "2026-11-14",
+      "time": "12:00 PM ET",
+      "tv": "ABC",
+      "note": "No. 9 vs. No. 12. Duke jumped 13 spots last week and Miami fell 7 after losing at Notre Dame. With Wake Forest at No. 2, the loser falls well back in the ACC race.",
+      "headliner": true
+    },
+    {
+      "away": "wake-forest",
+      "home": "smu",
+      "date": "2026-11-14",
+      "time": "12:00 PM ET",
+      "tv": "ESPN",
+      "note": "Wake Forest moved up to No. 2 after beating Merrimack. A road trip to a 7-2 SMU team that just got back into my poll is a much bigger test.",
+      "headliner": false
+    },
+    {
+      "away": "northwestern",
+      "home": "ohio-state",
+      "date": "2026-11-14",
+      "time": "12:00 PM ET",
+      "tv": "FOX",
+      "note": "Northwestern lost to Iowa and still moved into my poll at No. 25. Ohio State dropped out after losing to Oregon, so a home win would flip those two right back.",
+      "headliner": false
+    },
+    {
+      "away": "tennessee",
+      "home": "texas-am",
+      "date": "2026-11-14",
+      "time": "3:00 PM ET",
+      "tv": "ESPN",
+      "note": "Tennessee is 7-2 after taking Kentucky apart 34-6. Texas A&M is only 4-5, but Kyle Field is still a tough place to go.",
+      "headliner": false
+    },
+    {
+      "away": "usc",
+      "home": "indiana",
+      "date": "2026-11-14",
+      "time": "3:30 PM ET",
+      "tv": "CBS",
+      "note": "Indiana sat at No. 15 on its bye week. A 7-2 USC team, one of the best in my others receiving votes, is the chance to climb back up against a real opponent.",
+      "headliner": false
+    },
+    {
+      "away": "missouri",
+      "home": "georgia",
+      "date": "2026-11-14",
+      "time": "3:30 PM ET",
+      "tv": "ABC",
+      "note": "Missouri fell to No. 20 after losing to Texas. Georgia just beat Ole Miss 42-7 and doesn't have much reason to slow down.",
+      "headliner": false
+    },
+    {
+      "away": "florida",
+      "home": "kentucky",
+      "date": "2026-11-14",
+      "time": "6:15 PM ET",
+      "tv": "ESPN",
+      "note": "Kentucky fell 14 spots after the blowout in Knoxville. Florida is 5-4 and just lost at home to Oklahoma, which makes this Kentucky's spot to bounce back.",
+      "headliner": false
+    },
+    {
+      "away": "louisville",
+      "home": "north-carolina",
+      "date": "2026-11-14",
+      "time": "7:00 PM ET",
+      "tv": "ESPN2",
+      "note": "Louisville is up to No. 14 after a 44-17 win at Georgia Tech. North Carolina is 5-4 and needs a win like this to stay on my list.",
+      "headliner": false
+    },
+    {
+      "away": "baylor",
+      "home": "byu",
+      "date": "2026-11-14",
+      "time": "7:00 PM ET",
+      "tv": "FOX",
+      "note": "Both are in my others receiving votes. BYU is 7-2 after losing at Utah and Baylor is 6-3. The winner has the better case to get back into the top 25.",
+      "headliner": false
+    },
+    {
+      "away": "minnesota",
+      "home": "penn-state",
+      "date": "2026-11-14",
+      "time": "7:00 PM ET",
+      "tv": "FS1",
+      "note": "Minnesota lost to UCLA and Penn State beat Washington, so both are now 5-4. The loser is probably done in my others receiving votes.",
+      "headliner": false
+    },
+    {
+      "away": "texas",
+      "home": "lsu",
+      "date": "2026-11-14",
+      "time": "7:30 PM ET",
+      "tv": "ABC",
+      "note": "Texas won at Missouri and still slid to No. 6. LSU fell 15 spots after losing to Alabama and gets another top-10 team in Death Valley at night.",
+      "headliner": false
+    },
+    {
+      "away": "texas-tech",
+      "home": "oklahoma-state",
+      "date": "2026-11-14",
+      "time": "9:30 PM ET",
+      "tv": "ESPN",
+      "note": "No. 16 at No. 10, even though Texas Tech is 8-1 and Oklahoma State is 6-3. This one decides whether moving Oklahoma State up 13 spots was the right call.",
+      "headliner": false
+    },
+    {
+      "away": "utah",
+      "home": "arizona",
+      "date": "2026-11-14",
+      "time": "10:30 PM ET",
+      "tv": "FOX",
+      "note": "Utah is 9-0 and up to No. 5 after beating BYU. A 7-2 Arizona team at home in a late kickoff is exactly where unbeaten seasons go to die.",
+      "headliner": false
+    },
+    {
+      "away": "ole-miss",
+      "home": "oklahoma",
+      "date": "2026-11-15",
+      "time": "1:00 PM ET",
+      "tv": "SECN",
+      "note": "This one got pushed to Sunday by the FAA ground stop. Ole Miss is coming off a 42-7 loss to Georgia and Oklahoma is coming off a win in Gainesville. Both teams are in my others receiving votes.",
+      "headliner": false
+    }
+  ]
+}

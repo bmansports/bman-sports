@@ -1,0 +1,122 @@
+{
+  "week": "Week 10",
+  "games": [
+    {
+      "away": "clemson",
+      "home": "syracuse",
+      "date": "2026-11-07",
+      "time": "12:00 PM ET",
+      "tv": "ESPN2",
+      "note": "Clemson is 5-3 and Syracuse is 4-4, and both are just hanging on in my others receiving votes. The loser probably falls off the list.",
+      "headliner": false
+    },
+    {
+      "away": "byu",
+      "home": "utah",
+      "date": "2026-11-07",
+      "time": "12:00 PM ET",
+      "tv": "ABC",
+      "note": "The Holy War. Utah is 8-0 and still only No. 15 in my poll. Beating a 7-1 BYU team makes that spot a lot harder to defend.",
+      "headliner": false
+    },
+    {
+      "away": "ucla",
+      "home": "minnesota",
+      "date": "2026-11-07",
+      "time": "12:00 PM ET",
+      "tv": "FOX",
+      "note": "UCLA is 8-0 and I still dropped them to No. 14. A noon kickoff in Minneapolis against a Minnesota team that already beat Iowa is a real test.",
+      "headliner": false
+    },
+    {
+      "away": "texas",
+      "home": "missouri",
+      "date": "2026-11-07",
+      "time": "12:00 PM ET",
+      "tv": "ESPN",
+      "note": "Both teams are 6-2. Texas climbed 10 spots this week, and a road win in Columbia would show the jump was earned.",
+      "headliner": false
+    },
+    {
+      "away": "texas-am",
+      "home": "south-carolina",
+      "date": "2026-11-07",
+      "time": "3:00 PM ET",
+      "tv": "ESPN",
+      "note": "A 5-3 South Carolina team at No. 7 is the call in my poll I'll hear the most about. Texas A&M is 4-4 with nothing to lose and every reason to make me look bad.",
+      "headliner": false
+    },
+    {
+      "away": "oregon",
+      "home": "ohio-state",
+      "date": "2026-11-07",
+      "time": "3:30 PM ET",
+      "tv": "CBS",
+      "note": "Oregon got back into the conversation by beating Northwestern. Ohio State is coming off a loss and can't afford a third.",
+      "headliner": false
+    },
+    {
+      "away": "penn-state",
+      "home": "washington",
+      "date": "2026-11-07",
+      "time": "3:30 PM ET",
+      "tv": "FS1",
+      "note": "Penn State is 4-4 and barely holding onto votes. Washington is 5-3 and not much safer. Whoever loses is out of the picture.",
+      "headliner": false
+    },
+    {
+      "away": "alabama",
+      "home": "lsu",
+      "date": "2026-11-07",
+      "time": "3:30 PM ET",
+      "tv": "ABC",
+      "note": "My No. 2 against my No. 3 in Baton Rouge, both 6-2. The winner has the best argument for being the team chasing Georgia.",
+      "headliner": true
+    },
+    {
+      "away": "kentucky",
+      "home": "tennessee",
+      "date": "2026-11-07",
+      "time": "6:15 PM ET",
+      "tv": "ESPN",
+      "note": "No. 8 vs. No. 9, and Kentucky has the better record at 7-1. Neyland at night is where that record gets tested.",
+      "headliner": false
+    },
+    {
+      "away": "miami",
+      "home": "notre-dame",
+      "date": "2026-11-07",
+      "time": "7:30 PM ET",
+      "tv": "NBC",
+      "note": "Miami is 8-0 and the only unbeaten team in my top five. I dropped Notre Dame 11 spots without them losing, so this is their chance to prove me wrong.",
+      "headliner": false
+    },
+    {
+      "away": "iowa",
+      "home": "northwestern",
+      "date": "2026-11-07",
+      "time": "7:30 PM ET",
+      "tv": "FOX",
+      "note": "Iowa beat Wisconsin to get back into my poll. Northwestern lost at Oregon and needs this one to stay in the conversation.",
+      "headliner": false
+    },
+    {
+      "away": "georgia",
+      "home": "ole-miss",
+      "date": "2026-11-07",
+      "time": "7:30 PM ET",
+      "tv": "ABC",
+      "note": "My No. 1 goes on the road to Oxford at night. Ole Miss is 6-2, and this is its best shot at a statement win all year.",
+      "headliner": false
+    },
+    {
+      "away": "west-virginia",
+      "home": "texas-tech",
+      "date": "2026-11-07",
+      "time": "9:30 PM ET",
+      "tv": "ESPN",
+      "note": "Texas Tech is back in my poll at No. 19 after beating Arizona. A 5-3 West Virginia team in a late kickoff is the definition of a trap game.",
+      "headliner": false
+    }
+  ]
+}
